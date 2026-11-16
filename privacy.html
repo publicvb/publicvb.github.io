@@ -11,10 +11,10 @@
 <p>Last updated: 16 November 2026</p>
 <p>Publication Sync is a personal script that runs only on its author's computer.</p>
 <ul>
-<li><strong>Data accessed:</strong> it uses the Google Drive scope <code>drive.file</code>, which only
-gives access to files and folders the script itself created. It cannot see any other files in Google Drive.</li>
-<li><strong>Use:</strong> the script uploads local files to the user's own Google Drive folder and reads
-their names and checksums to decide which files need updating.</li>
+<li><strong>Data accessed:</strong> it uses the Google Drive scope <code>drive</code> so it can locate one
+existing folder in the author's own Google Drive. It only reads and writes files inside that folder.</li>
+<li><strong>Use:</strong> the script uploads local files to that folder and reads the names and checksums
+of the files there to decide which files need updating. It does not delete files.</li>
 <li><strong>Storage and sharing:</strong> no data is sent to, stored on, or shared with any server or third party
 other than Google Drive itself. The login token is stored only on the local computer.</li>
 <li><strong>Revoking access:</strong> access can be removed at any time at
